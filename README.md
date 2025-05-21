@@ -17,5 +17,9 @@ Pass the `CloudflareBindings` as generics when instantiation `Hono`:
 
 ```ts
 // src/index.ts
-const app = new Hono<{ Bindings: CloudflareBindings }>()
+const app = new Hono<{ Bindings: CloudflareBindings }>();
+```
+
+```txt
+cmd for generating client : npx openapi-typescript-codegen --input ./spec.json --output ./generated
 ```
